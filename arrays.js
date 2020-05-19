@@ -3,9 +3,10 @@
 
 // 1. printIndices
 function printIndices(items) {
-  // Replace this with your code
+    for (const idx in items) {
+        console.log(`${items[idx]} ${idx}`);
+    }
 }
-
 
 // 2. everyOtherItem
 function everyOtherItem(items) {
