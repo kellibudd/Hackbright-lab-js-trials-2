@@ -23,25 +23,9 @@ function everyOtherItem(items) {
     console.log(result)
 }
 
-// def every_other_item(items):
-//     """Print a list of every other item in `items`
-
-//     Start with index 0.
-
-//     Arguments:
-//         items (list)
-//     """
-
-//     result = []
-
-//     for i in range(len(items)):
-//         if i % 2 == 0:
-//             result.append(items[i])
-
-//     print(result)
-
-
 // 3. smallestNItems
 function smallestNItems(items, n) {
-  // Replace this with your code
+    if (items.length >= n) {
+       return items.sort((a, b) => a - b);
+    }
 }
