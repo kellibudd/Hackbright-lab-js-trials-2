@@ -20,12 +20,18 @@ function everyOtherItem(items) {
         }
     }
 
-    console.log(result)
+    return result;
 }
+
+console.log(everyOtherItem(['kat','marissa','andrew','ashley']))
 
 // 3. smallestNItems
 function smallestNItems(items, n) {
+    
     if (items.length >= n) {
-       return items.sort((a, b) => a - b);
+       const sortedNItems = items.sort((a, b) => a - b).slice(0, n)
+       return sortedNItems.reverse();
     }
 }
+
+console.log(smallestNItems([1, 30, 4, 21, 100000], 3))
