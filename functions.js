@@ -5,6 +5,13 @@
 
 // Define your function here
 
+function isHometown(town) {
+
+    return town === 'San Francisco';
+
+}
+
+console.log(isHometown('Oakland'))
 
 // 2. getFullName
 
